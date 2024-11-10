@@ -1,5 +1,7 @@
-body {
-    background-color: #0b0a0a; /* Couleur de fond de la page */
-    font-family: Arial, sans-serif; /* Police d'écriture */
-   
-}
+<body>
+    <div class="page">
+
+        <header>
+            <div class="id">
+                <h1><span class="text-primary">gallerie</span>Van Gogh</h1>
+</body>
