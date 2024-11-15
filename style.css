@@ -1,7 +1,172 @@
-<body>
-    <div class="page">
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-        <header>
-            <div class="id">
-                <h1><span class="text-primary">gallerie</span>Van Gogh</h1>
-</body>
+header {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    height: 450px; /* Hauteur fixe pour la bannière */
+    object-fit: cover; /* Maintient le ratio tout en coupant l'image si besoin */
+    margin: 0 auto;
+    display: block;
+}
+
+main .intro {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 50px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.immersion {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.immersion h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-item {
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main.vincent-life {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.life-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.life-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    flex: 1;
+}
+
+.life-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.life-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.life-card p {
+    font-size: 14px;
+    text-align: justify;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.social-icons img {
+width: 130px;
+    margin-right: 10px;
+}
+
