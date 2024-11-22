@@ -96,9 +96,7 @@ main .intro {
     margin-bottom: 20px;
     color: #333;
 }
-html {
-    scroll-behavior: smooth; /* Permet le défilement fluide entre les sections */
-}
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -189,28 +187,25 @@ footer {
 }
 
 
-/* Media Queries pour responsive design */
-
-/* Tablettes (max-width: 768px) */
+/* Media Queries pour tablettes */
 @media screen and (max-width: 768px) {
-    /* Adaptation de la navigation */
+    /* Modifications pour la navigation */
     nav ul {
-        flex-direction: column; /* Empile les éléments du menu */
+        flex-direction: column;  /* Empile les éléments du menu */
         text-align: center;
     }
-
     nav li {
         margin: 10px 0;
     }
 
-    /* Bannière */
+    /* Réduire la taille de la bannière */
     .banner img {
-        height: 300px; /* Réduit la hauteur de la bannière */
+        height: 300px; /* Réduit la hauteur de l'image */
     }
 
-    /* Section intro */
+    /* Adapter la disposition des cartes dans l'introduction */
     .intro {
-        flex-direction: column; /* Change l'alignement des cartes */
+        flex-direction: column; /* Les cartes sont empilées */
         margin: 20px 10px;
     }
 
@@ -218,19 +213,19 @@ footer {
         width: 120px; /* Réduit la taille des images */
     }
 
-    /* Grid pour la galerie */
+    /* Gallery grid : passer à 2 colonnes */
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
     }
 
-    /* Sections de la page Vincent-Life */
+    /* Sections de la biographie */
     .life-sections {
-        flex-direction: column; /* Colonne pour les petites tailles */
+        flex-direction: column; /* Les cartes sont empilées */
         gap: 20px;
     }
 
     .life-card {
-        flex: 1 0 100%; /* Les cartes prennent toute la largeur */
+        flex: 1 0 100%; /* Prendre toute la largeur */
     }
 
     footer {
@@ -242,15 +237,11 @@ footer {
         max-width: 100%;
         margin-bottom: 20px;
     }
-
-    .social-icons img {
-        width: 100px; /* Réduit la taille des icônes */
-    }
 }
 
-/* Smartphones (max-width: 480px) */
+/* Media Queries pour smartphones (moins de 480px) */
 @media screen and (max-width: 480px) {
-    /* Réduction de la taille de la police */
+    /* Modifications de la taille du titre */
     .main-title {
         font-size: 28px;
     }
@@ -267,17 +258,18 @@ footer {
         font-size: 12px;
     }
 
-    /* Réduire les marges et ajuster les tailles */
+    /* Bannière plus petite */
     .banner img {
-        height: 250px; /* Bannière plus petite */
+        height: 250px; /* Plus petite pour les smartphones */
     }
 
     .card img {
-        width: 100px; /* Réduit encore plus les images */
+        width: 100px; /* Réduit encore la taille des images */
     }
 
+    /* Gallery grid : passer à 1 colonne */
     .gallery-grid {
-        grid-template-columns: 1fr; /* Une seule colonne */
+        grid-template-columns: 1fr; /* 1 seule colonne */
     }
 
     footer {
@@ -285,6 +277,6 @@ footer {
     }
 
     .social-icons img {
-        width: 80px; /* Réduit encore la taille des icônes */
+        width: 80px; /* Réduit la taille des icônes */
     }
 }
