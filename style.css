@@ -1,6 +1,6 @@
 /* Styles de base */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -16,10 +16,9 @@ header {
     text-align: center;
     font-size: 36px;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #f2f2f2;   
     padding-bottom: 15px;
-    border-bottom: 2px solid #fff;
 }
 
 .banner img {
@@ -97,7 +96,9 @@ main .intro {
     margin-bottom: 20px;
     color: #333;
 }
-
+html {
+    scroll-behavior: smooth; /* Permet le défilement fluide entre les sections */
+}
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -113,6 +114,9 @@ main .intro {
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+html {
+    scroll-behavior: smooth; /* Active le défilement fluide */
 }
 
 main.vincent-life {
@@ -183,6 +187,7 @@ footer {
     width: 130px;
     margin-right: 10px;
 }
+
 
 /* Media Queries pour responsive design */
 
