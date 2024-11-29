@@ -7,6 +7,17 @@ body {
 }
 
 header {
+    .frame-1 header {
+        position: relative; /* Permet le positionnement interne si nécessaire */
+    }
+    .frame-1 .logo {
+        position: absolute;
+        top: 9x; /* Ajustez selon l'espace souhaité en haut */
+        right:20px; /* Ajustez selon l'espace souhaité à gauche */
+        width: 80px; /* Ajustez la taille selon vos besoins */
+        height: auto; /* Conserve les proportions */
+    }
+    
     text-align: center;
     background-color: #000;
     color: #fff;
@@ -87,6 +98,72 @@ main .intro {
 html {
     scroll-behavior: smooth;
 }
+#galerie {
+    background-color: #000; /* Fond noir */
+    color: #fff;
+    padding: 20px;
+}
+
+#galerie h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid; /* Active la grille CSS */
+    grid-template-rows: auto; /* Lignes ajustées automatiquement */
+    gap: 5px; /* Espacement entre les images */
+}
+
+.gallery-grid img {
+    width: 80%;
+    height: 50%;
+    object-fit: cover; /* Remplit l'espace tout en préservant les proportions */
+    border: 2px solid #fff; /* Bordure blanche */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+/* Positionnement et dimensions spécifiques pour chaque image */
+.gallery-grid img:nth-child(1) {
+    grid-column: span 1; 
+    grid-row: span 1;
+}
+
+.gallery-grid img:nth-child(2) {
+    grid-column: span 1; 
+    grid-row: span 1; 
+}
+
+.gallery-grid img:nth-child(3) {
+    grid-column: span 1,5; 
+    grid-row: span 1; 
+}
+
+.gallery-grid img:nth-child(4) {
+    grid-column: span 1,5; /* Occupe 3 colonnes */
+    grid-row: span 1; /* Occupe 2 lignes */
+}
+
+.gallery-grid img:nth-child(5) {
+    grid-column: span 1,5; /* Occupe 2 colonnes */
+    grid-row: span 1; /* Occupe 2 lignes */
+}
+
+.gallery-grid img:nth-child(6) {
+    grid-column: span 1; /* Occupe 2 colonnes */
+    grid-row: span 2; /* Occupe 1 ligne */
+}
+
+.gallery-grid img:nth-child(7) {
+    grid-column: span 1; /* Occupe 2 colonnes */
+    grid-row: span 1; /* Occupe 1 ligne */
+}
+
+.gallery-grid img:nth-child(8) {
+    grid-column: span 2; /* Occupe 4 colonnes */
+    grid-row: span 1; /* Occupe 1 ligne */
+}
 
 .immersion {
     text-align: center;
@@ -111,11 +188,7 @@ html {
     overflow: hidden;
 }
 
-.gallery-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
+
 html {
     scroll-behavior: smooth; /* Active le défilement fluide */
 }
@@ -173,7 +246,31 @@ footer {
 .footer-section {
     max-width: 250px;
 }
+.footer-section .social-icons {
+    display: flex; /* Organise les icônes en ligne */
+    justify-content: center; /* Centre les icônes horizontalement */
+    gap: 10px; /* Espacement entre les icônes */
+    margin-top: 10px;
+}
 
+.footer-section .social-icons a {
+    text-decoration: none; /* Supprime le soulignement des liens */
+    color: #333; /* Couleur des icônes (par défaut) */
+    font-size: 10px; /* Taille des icônes */
+    transition: color 0.3s ease; /* Animation fluide pour les effets au survol */
+}
+.footer-section .social-icons a img {
+    width: 20px; /* Rétrécit la largeur des icônes */
+    height: 20px; /* Rétrécit la hauteur des icônes */
+    transition: transform 0.3s ease; /* Animation fluide pour l'effet au survol */
+}
+
+.footer-section .social-icons a img:hover {
+    transform: scale(1.1); /* Agrandit légèrement les icônes au survol */
+}
+.footer-section .social-icons a:hover {
+    color: #0077cc; /* Couleur au survol */
+}
 .footer-section h3 {
     font-size: 16px;
     margin-bottom: 10px;
