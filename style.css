@@ -84,6 +84,9 @@ main .intro {
     font-size: 18px;
     font-weight: bold;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 .immersion {
     text-align: center;
