@@ -1,25 +1,24 @@
-
+/* Styles de base */
 body {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Kaisei HarunoUmi', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
 header {
-    .frame-1 header {
-        position: relative;
-    }
-    
-    .frame-1 .logo {
-        position: absolute;
-        top: 20px; /* Ajustez la position en fonction de vos besoins */
-        right: 20px; 
-        width: 15vw; /* Utilisez un pourcentage de la largeur de l'écran */
-        max-width: 100px; /* Limite la taille maximale */
-        height: auto; /* Maintient les proportions */
-    }
+    position: relative;
+}
 
+.frame-1 .logo {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 80px;
+    height: auto;
+}
+
+header {
     text-align: center;
     background-color: #000;
     color: #fff;
@@ -30,7 +29,7 @@ header {
     font-size: 36px;
     margin-top: 20px;
     margin-bottom: 5px;
-    color: #f2f2f2;   
+    color: #f2f2f2;
     padding-bottom: 15px;
 }
 
@@ -38,23 +37,23 @@ header {
     width: 100%;
     height: auto;
     max-width: 1450px;
-    height: 450px; /* Hauteur fixe pour la bannière */
-    object-fit: cover; 
+    height: 450px;
+    object-fit: cover;
     margin: 0 auto;
     display: block;
 }
 
 nav {
     display: flex;
-    justify-content: space-between; /* élément pour espacer */
-    background-color: #000; 
-    padding: 10px 20px; /* espace autour du menu */
+    justify-content: space-between;
+    background-color: #000;
+    padding: 10px 20px;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between; 
-    flex: 1; 
+    justify-content: space-between;
+    flex: 1;
     list-style: none;
     padding: 0;
 }
@@ -67,7 +66,7 @@ nav a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    padding: 0 15px; /* Espacement autour des liens */
+    padding: 0 15px;
 }
 
 main .intro {
@@ -81,27 +80,29 @@ main .intro {
 }
 
 .card img {
-    width: 150px; /* Augmente la largeur des images */
-    height: auto; /* Maintient le ratio pour éviter la distorsion */
+    width: 150px;
+    height: auto;
     border: 2px solid #000;
     margin-bottom: 10px;
 }
 
 .intro {
     display: flex;
-    justify-content: space-around; /* Espace entre les cartes */
-    margin: 20px auto; /* Centre le conteneur sur la page */
+    justify-content: space-around;
+    margin: 20px auto;
 }
 
 .card p {
     font-size: 18px;
     font-weight: bold;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 #galerie {
-    background-color: #000; /* Fond noir */
+    background-color: #000;
     color: #fff;
     padding: 20px;
 }
@@ -110,69 +111,32 @@ html {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
-}.gallery-grid {
+}
+
+.gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
-    gap: 15px; /* Espacement entre les images */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
 }
 
 .gallery-grid img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Remplit le conteneur en gardant les proportions */
+    object-fit: cover;
     border: 2px solid #fff;
     border-radius: 5px;
 }
 
-/* Ajustements pour chaque image */
-.gallery-grid img:nth-child(1) {
-    grid-column: span 1; 
-    grid-row: span 1;
-}
-
-.gallery-grid img:nth-child(2) {
-    grid-column: span 1; 
-    grid-row: span 1;
-}
-
-.gallery-grid img:nth-child(3) {
-    grid-column: span 1; 
-    grid-row: span 1; /* Ajuste pour éviter qu'elle déborde */
-}
-
-.gallery-grid img:nth-child(4) {
-    grid-column: span 1; 
-    grid-row: span 1;
-}
-
-.gallery-grid img:nth-child(5) {
-    grid-column: span 2; /* Image plus large */
-    grid-row: span 1;
-}
-
-.gallery-grid img:nth-child(6) {
-    grid-column: span 1; 
-    grid-row: span 1;
-}
-
-.gallery-grid img:nth-child(7) {
-    grid-column: span 1; 
-    grid-row: span 1;
-}
-
+/* Ajustements spécifiques aux images de la galerie */
+.gallery-grid img:nth-child(5),
 .gallery-grid img:nth-child(8) {
-    grid-column: span 2; 
-    grid-row: span 1;
+    grid-column: span 2;
 }
 
-/* Réduction des images dans la troisième colonne */
 .gallery-grid img:nth-child(3),
 .gallery-grid img:nth-child(7) {
-    width: 80%; /* Réduction spécifique pour ces images */
-    height: auto; /* Garde les proportions */
-    margin: 0 auto; /* Centre l'image dans sa colonne */
-}
-
+    width: 80%;
+    margin: 0 auto;
 }
 
 .immersion {
@@ -187,32 +151,12 @@ html {
     color: #333;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-}
-
-.gallery-item {
-    border: 2px solid #000;
-    overflow: hidden;
-}
-
-
-html {
-    scroll-behavior: smooth; /* Active le défilement fluide */
-}
-
-h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
 .life-sections {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
+
 .vincent-life {
     text-align: center;
     margin: 45px auto;
@@ -258,30 +202,35 @@ footer {
 .footer-section {
     max-width: 250px;
 }
+
 .footer-section .social-icons {
-    display: flex; 
-    justify-content: center; 
-    gap: 10px; 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .footer-section .social-icons a {
-    text-decoration: none; 
-    color: #333; 
+    text-decoration: none;
+    color: #333;
     font-size: 10px;
-    transition: color 0.3s ease; 
+    transition: color 0.3s ease;
 }
+
 .footer-section .social-icons a img {
     width: 20px;
     height: 20px;
     transition: transform 0.3s ease;
 }
 
-.footer-section .social-icons a img:hover {
-    transform: scale(1.1); 
 .footer-section .social-icons a:hover {
-    color: #0077cc; 
+    color: #0077cc;
 }
+
+.footer-section .social-icons a img:hover {
+    transform: scale(1.1);
+}
+
 .footer-section h3 {
     font-size: 16px;
     margin-bottom: 10px;
@@ -292,51 +241,41 @@ footer {
     line-height: 1.5;
 }
 
-.social-icons img {
-    width: 130px;
-    margin-right: 10px;
-}
-
-
-/* Media Queries pour tablettes */
+/* Responsive pour tablettes */
 @media screen and (max-width: 768px) {
-    /* Modifications pour la navigation */
     nav ul {
-        flex-direction: column;  /* Empile les éléments du menu */
+        flex-direction: column;
         text-align: center;
     }
+
     nav li {
         margin: 10px 0;
     }
 
-    /* Réduire la taille de la bannière */
     .banner img {
-        height: 300px; /* Réduit la hauteur de l'image */
+        height: 300px;
     }
 
-    /* Adapter la disposition des cartes dans l'introduction */
     .intro {
-        flex-direction: column; /* Les cartes sont empilées */
+        flex-direction: column;
         margin: 20px 10px;
     }
 
     .card img {
-        width: 120px; /* Réduit la taille des images */
+        width: 120px;
     }
 
-    /* Gallery grid : passer à 2 colonnes */
     .gallery-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    /* Sections de la biographie */
     .life-sections {
-        flex-direction: column; /* Les cartes sont empilées */
+        flex-direction: column;
         gap: 20px;
     }
 
     .life-card {
-        flex: 1 0 100%; /* Prendre toute la largeur */
+        flex: 1 0 100%;
     }
 
     footer {
@@ -350,9 +289,8 @@ footer {
     }
 }
 
-/* Media Queries pour smartphones (moins de 480px) */
+/* Responsive pour smartphones */
 @media screen and (max-width: 480px) {
-    /* Modifications de la taille du titre */
     .main-title {
         font-size: 28px;
     }
@@ -369,18 +307,16 @@ footer {
         font-size: 12px;
     }
 
-    /* Bannière plus petite */
     .banner img {
-        height: 250px; /* Plus petite pour les smartphones */
+        height: 250px;
     }
 
     .card img {
-        width: 100px; /* Réduit encore la taille des images */
+        width: 100px;
     }
 
-    /* Gallery grid : passer à 1 colonne */
     .gallery-grid {
-        grid-template-columns: 1fr; /* 1 seule colonne */
+        grid-template-columns: 1fr;
     }
 
     footer {
@@ -388,7 +324,6 @@ footer {
     }
 
     .social-icons img {
-        width: 80px; /* Réduit la taille des icônes */
+        width: 80px;
     }
-
 }
