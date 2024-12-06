@@ -392,16 +392,3 @@ footer {
     }
 
 }
-@media (max-width: 768px) {
-    .frame-1 .logo {
-        width: 25vw; /* Augmente la taille du logo sur des écrans plus petits */
-        right: 10px; /* Ajuste la position du logo */
-    }
-}
-
-@media (max-width: 480px) {
-    .frame-1 .logo {
-        width: 35vw; /* Logo encore plus grand sur les très petits écrans */
-        right: 5px; /* Positionne le logo plus près du bord */
-    }
-}
