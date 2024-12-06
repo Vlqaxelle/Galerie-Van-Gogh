@@ -8,16 +8,18 @@ body {
 
 header {
     .frame-1 header {
-        position: relative; /* Permet le positionnement interne si nécessaire */
-    }
-    .frame-1 .logo {
-        position: absolute;
-        top: 9x; /* Ajustez selon l'espace souhaité en haut */
-        right:20px; /* Ajustez selon l'espace souhaité à gauche */
-        width: 80px; /* Ajustez la taille selon vos besoins */
-        height: auto; /* Conserve les proportions */
+        position: relative;
     }
     
+    .frame-1 .logo {
+        position: absolute;
+        top: 20px; /* Ajustez la position en fonction de vos besoins */
+        right: 20px; 
+        width: 15vw; /* Utilisez un pourcentage de la largeur de l'écran */
+        max-width: 100px; /* Limite la taille maximale */
+        height: auto; /* Maintient les proportions */
+    }
+
     text-align: center;
     background-color: #000;
     color: #fff;
@@ -37,22 +39,22 @@ header {
     height: auto;
     max-width: 1450px;
     height: 450px; /* Hauteur fixe pour la bannière */
-    object-fit: cover; /* Maintient le ratio tout en coupant l'image si besoin */
+    object-fit: cover; 
     margin: 0 auto;
     display: block;
 }
 
 nav {
     display: flex;
-    justify-content: space-between; /* Ajoute cet élément pour espacer */
-    background-color: #000; /* Assure que le menu a un fond */
-    padding: 10px 20px; /* Ajoute de l'espace autour du menu */
+    justify-content: space-between; /* élément pour espacer */
+    background-color: #000; 
+    padding: 10px 20px; /* espace autour du menu */
 }
 
 nav ul {
     display: flex;
-    justify-content: space-between; /* Distribue l'espace de manière égale */
-    flex: 1; /* Pour que la liste prenne toute la largeur disponible */
+    justify-content: space-between; 
+    flex: 1; 
     list-style: none;
     padding: 0;
 }
@@ -201,13 +203,6 @@ html {
     scroll-behavior: smooth; /* Active le défilement fluide */
 }
 
-main.vincent-life {
-    max-width: 1200px;
-    margin: 30px auto;
-    padding: 20px;
-    text-align: center;
-}
-
 h1 {
     font-size: 32px;
     margin-bottom: 20px;
@@ -217,6 +212,15 @@ h1 {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+.vincent-life {
+    text-align: center;
+    margin: 45px auto;
+    max-width: 1200px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: #333;
 }
 
 .life-card {
@@ -255,29 +259,28 @@ footer {
     max-width: 250px;
 }
 .footer-section .social-icons {
-    display: flex; /* Organise les icônes en ligne */
-    justify-content: center; /* Centre les icônes horizontalement */
-    gap: 10px; /* Espacement entre les icônes */
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
     margin-top: 10px;
 }
 
 .footer-section .social-icons a {
-    text-decoration: none; /* Supprime le soulignement des liens */
-    color: #333; /* Couleur des icônes (par défaut) */
-    font-size: 10px; /* Taille des icônes */
-    transition: color 0.3s ease; /* Animation fluide pour les effets au survol */
+    text-decoration: none; 
+    color: #333; 
+    font-size: 10px;
+    transition: color 0.3s ease; 
 }
 .footer-section .social-icons a img {
-    width: 20px; /* Rétrécit la largeur des icônes */
-    height: 20px; /* Rétrécit la hauteur des icônes */
-    transition: transform 0.3s ease; /* Animation fluide pour l'effet au survol */
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
 }
 
 .footer-section .social-icons a img:hover {
-    transform: scale(1.1); /* Agrandit légèrement les icônes au survol */
-}
+    transform: scale(1.1); 
 .footer-section .social-icons a:hover {
-    color: #0077cc; /* Couleur au survol */
+    color: #0077cc; 
 }
 .footer-section h3 {
     font-size: 16px;
@@ -386,5 +389,19 @@ footer {
 
     .social-icons img {
         width: 80px; /* Réduit la taille des icônes */
+    }
+
+}
+@media (max-width: 768px) {
+    .frame-1 .logo {
+        width: 25vw; /* Augmente la taille du logo sur des écrans plus petits */
+        right: 10px; /* Ajuste la position du logo */
+    }
+}
+
+@media (max-width: 480px) {
+    .frame-1 .logo {
+        width: 35vw; /* Logo encore plus grand sur les très petits écrans */
+        right: 5px; /* Positionne le logo plus près du bord */
     }
 }
