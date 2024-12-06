@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+body {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  margin: 0;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+/* Section du formulaire */
+#reservation {
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#back-to-site {
+  color: rgb(244, 239, 239); /* Couleur du lien */
+  text-decoration: none; /* Supprime le soulignement par défaut */
+}
+
+#back-to-site:hover {
+  color: rgb(245, 238, 238); /* Couleur lorsque le lien est survolé */
+  text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+
+#reservation h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Formulaire */
+form {
+  text-align: left;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  background-color: #090a09;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1330af;
+}
+
+/* Header et footer */
+header {
+  font-size: 18px;
+  padding: 20px;
+}
+
+footer {
+  font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  #reservation {
+    width: 90%;
+  }
+  form {
+    max-width: 100%;
+  }
+}
