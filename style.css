@@ -214,48 +214,6 @@ footer .footer-section {
     }
 }
 
-/* Styles généraux du footer */
-footer {
-    background-color: #0b0b0b;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    text-align: center; /* Centrer les textes */
-}
-
-footer .footer-section {
-    margin-bottom: 20px; /* Espacement entre les sections */
-}
-
-footer h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    text-transform: uppercase; /* Texte en majuscule */
-}
-
-footer p {
-    font-size: 14px;
-    line-height: 1.6; /* Espace entre les lignes de texte */
-}
-
-/* Styles des icônes sociales */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Espace entre les icônes */
-}
-
-.social-icons img {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-    transform: scale(1.1); /* Effet zoom au survol */
-}
 
 /* Responsive Design pour les petits écrans */
 @media screen and (max-width: 768px) {
