@@ -152,31 +152,21 @@ nav a:hover {
     line-height: 1.6;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    .biographie-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .biographie-card {
-        width: 100%;
-        max-width: 400px;
-    }
-}
-
+/* Style global pour le footer */
 footer {
-    background-color: #0b0b0b;
-    color: #fff;
+    background-color: #080606;
+    color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 20px;
+    text-align: center;
 }
 
-footer .footer-section {
+footer div {
     max-width: 250px;
 }
 
+/* Icônes des réseaux sociaux */
 .social-icons img {
     width: 24px;
     margin: 0 5px;
@@ -187,55 +177,52 @@ footer .footer-section {
     transform: scale(1.1);
 }
 
-/* Responsive design */
+/* Responsive Design global */
 @media screen and (max-width: 768px) {
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px; /* Réduction du padding */
+    }
+
+    .social-icons img {
+        width: 20px; /* Réduction des icônes */
+    }
+
+    /* Section biographie */
+    .biographie-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .biographie-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Section intro */
     .intro {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Galerie */
     .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+        gap: 15px; /* Espacement entre les éléments */
     }
-
-
 }
-  footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #080606;
-    color: white;
-  }
-  footer div {
-    text-align: center;
-  }
 
-  @media (max-width: 768px) {
-    footer {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
+/* Responsive pour les écrans très petits */
 @media screen and (max-width: 480px) {
+    /* Titre principal */
     .main-title {
-        font-size: 24px;
+        font-size: 24px; /* Taille réduite pour les petits écrans */
     }
 
+    /* Galerie */
     .gallery-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* Responsive Design pour les petits écrans */
-@media screen and (max-width: 768px) {
-    footer {
-        padding: 15px;
-    }
-
-    .social-icons img {
-        width: 20px; /* Réduction des icônes sur les petits écrans */
+        grid-template-columns: 1fr; /* Une seule colonne */
     }
 }
