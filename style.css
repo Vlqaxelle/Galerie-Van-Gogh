@@ -191,12 +191,11 @@ footer div {
         margin: 0 auto;
         margin-top: 10px;
         max-width: 100px;
-}
+    }
 
-.frame-1 {
-    text-align: center;
- 
-}
+    .frame-1 {
+        text-align: center;
+    }
 
     /* Footer */
     footer {
@@ -208,10 +207,10 @@ footer div {
     .social-icons img {
         width: 20px; /* Réduction des icônes */
     }
-}
 
     /* Section biographie */
     .biographie-grid {
+        display: flex; 
         flex-direction: column;
         align-items: center;
     }
@@ -219,32 +218,43 @@ footer div {
     .biographie-card {
         width: 100%;
         max-width: 400px;
+        margin: 10px 0; /* Ajout d'une marge pour espacer les cartes */
     }
 
     /* Section intro */
     .intro {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     /* Galerie */
     .gallery-grid {
+        display: grid;
         grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
         gap: 15px; /* Espacement entre les éléments */
     }
-
+}
 
 /* Responsive pour les écrans très petits */
 @media screen and (max-width: 480px) {
     /* Titre principal */
     .main-title {
         font-size: 24px; /* Taille réduite pour les petits écrans */
-      }
+    }
 
     /* Galerie */
     .gallery-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* Une colonne sur les petits écrans */
+    }
+
+    /* Section biographie */
+    .biographie-card {
+        max-width: 100%; /* Utilisation de toute la largeur disponible */
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px; /* Réduction du padding pour les très petits écrans */
     }
 }
-
-
