@@ -12,16 +12,21 @@ header {
     color: #fff;
     padding: 10px 0;
 }
+.frame-1 {
+    position: relative; 
+    text-align: center;
+}
 
 .frame-1 .logo {
-    position: absolute;
+    position:absolute;
     top: 10px;
+    margin-bottom: 100px;
     right: 20px;
     width: 80px;
 }
 
 .main-title {
-    font-size: 6vw;
+    font-size: 3vw;
     margin: 20px 0;
 }
 
@@ -179,7 +184,20 @@ footer div {
 }
 
 /* Responsive Design global */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { 
+    .frame-1 .logo {
+        display: block;
+        position: static;
+        margin: 0 auto;
+        margin-top: 10px;
+        max-width: 100px;
+}
+
+.frame-1 {
+    text-align: center;
+ 
+}
+
     /* Footer */
     footer {
         flex-direction: column;
@@ -190,6 +208,7 @@ footer div {
     .social-icons img {
         width: 20px; /* Réduction des icônes */
     }
+}
 
     /* Section biographie */
     .biographie-grid {
@@ -213,7 +232,7 @@ footer div {
         grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
         gap: 15px; /* Espacement entre les éléments */
     }
-}
+
 
 /* Responsive pour les écrans très petits */
 @media screen and (max-width: 480px) {
@@ -224,6 +243,8 @@ footer div {
 
     /* Galerie */
     .gallery-grid {
-        grid-template-columns: 1fr; /* Une seule colonne */
+        grid-template-columns: 1fr; 
     }
 }
+
+
