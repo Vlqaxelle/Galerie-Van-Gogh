@@ -21,7 +21,7 @@ header {
 }
 
 .main-title {
-    font-size: 36px;
+    font-size: 3vw;
     margin: 20px 0;
 }
 
@@ -30,6 +30,7 @@ header {
     max-width: 1450px;
     height: 450px;
     object-fit: cover;
+    
 }
 
 nav {
@@ -219,7 +220,7 @@ footer div {
     /* Titre principal */
     .main-title {
         font-size: 24px; /* Taille réduite pour les petits écrans */
-    }
+      }
 
     /* Galerie */
     .gallery-grid {
